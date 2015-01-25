@@ -5,7 +5,9 @@
  */
 package com.samoatesgames.easyannouncement;
 
+import java.util.ArrayList;
 import java.util.List;
+import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 
 /**
@@ -21,7 +23,10 @@ public class Announcement {
      * @param lines 
      */
     Announcement(List<String> lines) {
-        m_lines = lines;
+        m_lines = new ArrayList<String>();
+        for (String line : lines) {
+            m_lines.add(ChatColor.translateAlternateColorCodes('&', line).trim());
+        }
     }
     
     /**
