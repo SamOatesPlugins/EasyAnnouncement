@@ -1,0 +1,5 @@
+name: EasyAnnouncement
+main: com.samoatesgames.easyannouncement.EasyAnnouncement
+version: 1.0
+authors: [SamOatesPlugins]
+description: A simple announcement plugin for Minecraft.
