@@ -12,7 +12,7 @@ package com.samoatesgames.easyannouncement;
 public class Setting {
     
     // General Settings
-    public static final String TimeBetweenAnnouncements = "announcement.minutes_between_announcenemtns";
+    public static final String TimeBetweenAnnouncements = "announcement.minutes_between_announcements";
     public static final String NumberOfAnnouncements = "announcement.count";
     
 }
