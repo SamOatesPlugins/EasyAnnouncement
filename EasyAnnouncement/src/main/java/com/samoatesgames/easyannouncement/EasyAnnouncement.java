@@ -1,5 +1,6 @@
 package com.samoatesgames.easyannouncement;
 
+import com.samoatesgames.easyannouncement.command.AnnouncementCommand;
 import com.samoatesgames.samoatesplugincore.plugin.SamOatesPlugin;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -51,6 +52,8 @@ public final class EasyAnnouncement extends SamOatesPlugin {
             }
             
         }, announcementTime, announcementTime);
+        
+        m_commandManager.registerCommandHandler("announcement", new AnnouncementCommand(this));
         
         this.logInfo("Succesfully enabled.");
     }
@@ -105,6 +108,14 @@ public final class EasyAnnouncement extends SamOatesPlugin {
             m_announcements.put(announcementIndex, announcement);
         }
         
+    }
+    
+    /**
+     * 
+     * @return 
+     */
+    public Map<Integer, Announcement> getAnnouncements() {
+        return m_announcements;
     }
     
     /**

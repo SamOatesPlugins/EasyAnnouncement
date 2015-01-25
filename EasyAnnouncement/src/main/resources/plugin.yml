@@ -3,3 +3,8 @@ main: com.samoatesgames.easyannouncement.EasyAnnouncement
 version: 1.0
 authors: [SamOatesPlugins]
 description: A simple announcement plugin for Minecraft.
+
+commands:
+    announcement:
+        description: Access to the announcement commands
+        usage: /<command>

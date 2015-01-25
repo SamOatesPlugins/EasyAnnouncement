@@ -8,6 +8,7 @@ package com.samoatesgames.easyannouncement;
 import java.util.ArrayList;
 import java.util.List;
 import org.bukkit.ChatColor;
+import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 /**
@@ -31,10 +32,18 @@ public class Announcement {
     
     /**
      * 
+     * @return 
+     */
+    public List<String> getLines() {
+        return m_lines;
+    }
+    
+    /**
+     * 
      * @param player 
      * @param plugin 
      */
-    public void sendToPlayer(Player player, EasyAnnouncement plugin) {
+    public void sendToPlayer(CommandSender player, EasyAnnouncement plugin) {
         for (String line : m_lines) {
             plugin.sendMessage(player, line);
         }        
