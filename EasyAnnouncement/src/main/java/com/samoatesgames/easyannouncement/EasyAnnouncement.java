@@ -81,6 +81,8 @@ public final class EasyAnnouncement extends SamOatesPlugin {
         this.registerSetting(Setting.NumberOfAnnouncements, 1);
         
         this.registerSetting("announcement.0.lines", new String[] { "This is an example announcement", "Brought to you by the Easy Announcements plugin." });
+        this.registerSetting("announcement.1.lines", new String[] { "This is an example announcement", "Brought to you by the Easy Announcements plugin." });
+        this.registerSetting("announcement.2.lines", new String[] { "This is an example announcement", "Brought to you by the Easy Announcements plugin." });
     }
     
     /**
